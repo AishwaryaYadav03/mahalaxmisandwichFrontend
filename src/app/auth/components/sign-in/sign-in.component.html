@@ -1,0 +1,81 @@
+<!-- <div class="register-page m-auto mt-5">
+    <div class="register-box">
+        <div class="register-logo text-center">
+            <h2><b>Login</b> Form</h2>
+        </div>
+
+        <div class="card">
+            <div class="card-body login-card-body">
+                <p class="login-box-msg">Welcome to Mahalaxmi Sandwich</p>
+
+                <form [formGroup]="form" (ngSubmit)="login()">
+                    <div class="input-group mb-3">
+                        <input formControlName="username" type="email" class="form-control" placeholder="Email">
+                        <div class="input-group-append">
+                            
+                        </div>
+                    </div>
+                    <div class="input-group mb-3">
+                        <input formControlName="password" type="password" class="form-control" placeholder="Password">
+                        <div class="input-group-append">
+                           
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 mb-2 ">
+                            <button type="submit" class="btn btn-primary btn-block col-12">Sign In</button>
+                        </div>
+                    </div>
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+ -->
+
+
+ <div class="overlay" style="background: url('assets/img/global-bg.jpg') no-repeat center center fixed; background-size: cover;">
+
+    <div class="login-container">
+        <!-- Form Section -->
+        <div class="form-section">
+            <!-- Logo -->
+            <img src="assets/img/1000110861-removebg.png" alt="Logo" class="logo">
+            <p class="sub-text">Mahalaxmi Sandwich</p>
+
+            <!-- Form -->
+            <form [formGroup]="form" (ngSubmit)="login()">
+                <!-- Email -->
+                <div class="input-group">
+                    <input type="email" formControlName="username" placeholder="Email" required>
+                    <i class="fas fa-envelope"></i>
+                </div>
+
+                <!-- Password -->
+                <div class="input-group">
+                    <input type="password" formControlName="password" placeholder="Password" required>
+                    <i class="fas fa-lock"></i>
+                </div>
+
+                <!-- Sign In Button -->
+                <button type="submit" class="btn-login">Sign In</button>
+            </form>
+
+            <!-- Footer Links -->
+            <!-- <p class="forgot-password"><a href="#">Forgot Password?</a></p>
+            <p class="signup-link">Don't have an account? <a href="#">Sign Up</a></p> -->
+        </div>
+    </div>
+
+</div>
+
+
